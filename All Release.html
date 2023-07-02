@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="shortcut icon" type="x-icon" href="animezero.png">
+ <meta name="apple-mobile-web-app-capable" content="no">
+ <meta name="mobile-web-app-capable" content="no">
+ <title>All Release</title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AnimeZero: All Release">
+<meta name="twitter:description" content="All Anime That Has Aired">
+<meta name="twitter:image" content="http://zerogojonime.zya.me/thumnail1.png">
+ <meta property="og:type" content="website">
+<meta property="og:title" content="AnimeZero: All Release">
+<meta property="og:url" content="http://zerogojonime.zya.me/All%20Release">
+<meta property="og:description" content="All Anime That Has Aired">
+<meta property="og:image" content="http://zerogojonime.zya.me/thumnail1.png">
+<meta property="og:name" content="AnimeZero: All Release">
+<meta property="og:site:name" content="AnimeZero: All Release">
+ <style>
+  * {
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+  }
+  
+  html{
+   -webkit-tap-highlight-color: transparent;
+   -webkit-user-select: none;
+   user-select: none;
+  }
+
+  body {
+   background: rgba(27, 27, 28, 1);
+   position: relative;
+   scroll-behavior: smooth;
+  }
+  .bur{
+   animation-duration: 3s;
+   animation-name: hop;
+   
+  }
+
+  .ber {
+   display: flex;
+   position: relative;
+   display: none;
+   justify-content: space-evenly;
+  }
+
+  .ber h4 {
+   color: white;
+   font-family: 'Courier New';
+   font-size: 1.1em;
+  }
+
+  .bar {
+   position: relative;
+   background: rgba(0, 0, 0, 1);
+   border-radius: 5px;
+   padding: 7px;
+   border-bottom: 1px solid rgba(211, 211, 211, 1);
+  }
+
+  .on {
+   display: flex;
+   justify-content: space-evenly;
+   display: flex;
+  }
+
+  .bar a {
+   font-size: 1.1em;
+   color: white;
+   font-family: 'Courier New';
+   animation: all 0.3s ease 0s;
+  }
+  .bar a:hover{
+   lighting-color: azure;
+   box-shadow: 0px 0px 10px rgba(44, 62, 165, 0.58), 0px 0px 10px rgba(44, 62, 165, 0.58);
+   letter-spacing: 3px;
+  }
+
+  #myInput {
+   border: 2px solid rgba(163, 209, 255, 1);
+   background: #52525230;
+   color: #DFDFDFC9;
+   width: 100%;
+   font-family: 'Courier New';
+   font-size: 1em;
+   font-weight: 500;
+   text-align: left;
+   padding: 12px 20px 12px 40px;
+   border-radius: 7px;
+   outline: none;
+   overflow: hidden;
+   text-overflow: ellipsis;
+  }
+
+  .list {
+   padding: 5px 20px;
+   margin: 20px 20px;
+   background: rgba(3, 3, 3, 0.78);
+   box-shadow: 0px 10px 10px black, inset 2px 2px 2px black;
+   overflow-y: scroll;
+   overscroll-behavior-y: smooth;
+   height: 80px;
+   border: 1px solid white;
+   border-radius: 5px;
+   text-align: left;
+   display: block;
+  }
+
+  .list a {
+   color: white;
+   font-family: sans-serif;
+   text-transform: uppercase;
+   font-size: 0.6em;
+   font-weight: 500;
+   text-decoration: none;
+   text-shadow: 10px 10px 10px black, 15px 15px 15px white;
+   animation-duration: 3s;
+   animation-name: hop;
+  }
+
+  .lee iframe {
+   height: 100%;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: auto;
+   display: block;
+   border: 2px solid white;
+   box-shadow: 0px 8px 8px black;
+   animation-duration: 3s;
+   animation-name: hop;
+  }
+
+  .wehh {}
+
+  .dep {
+   float: left;
+   width: 30%;
+   padding: 30px 30px 50px 60px;
+  }
+
+  .section {
+   text-align: center;
+  }
+
+  .section img {
+   width: 85%;
+   height: auto;
+  }
+
+  .section h2,
+  a {
+   color: black;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: 1rem;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   transition: all 0.3s ease 0;
+   animation-duration: 5s;
+   animation-name: hop;
+  }
+
+  .section img,
+  h2 {
+   border: 1.5px solid black;
+   background: coral;
+   border-radius: 2px;
+   box-shadow: 0px 10px 10px black;
+   transition: all 0.3s ease 0;
+   animation-duration: 5s;
+   animation-name: hop;
+  }
+
+  .section a:hover {
+   color: white;
+  }
+
+  .section h2:hover {
+   color: white;
+   background: black;
+   border: 1px solid floralwhite;
+  }
+
+  @keyframes hop {
+   from {
+    transform: scale(0);
+    opacity: 0;
+   }
+
+   to {
+    transform: scale(1);
+    opacity: 1;
+   }
+  }
+
+  @media screen and (max-width: 1500px) {
+   #myInput {
+    width: 600px;
+    position: relative;
+   }
+
+   .lee iframe {
+    height: 450px;
+    width: 900px;
+   }
+
+   .list a {
+    font-size: 0.6ch;
+   }
+
+   .section a {
+    font-size: 2ch;
+   }
+  }
+
+  @media screen and (min-width: 1200px) {
+   .lee iframe {
+    height: 450px;
+    width: 900px;
+   }
+
+   #myInput {
+    width: 600px;
+   }
+
+   .list {
+    display: block;
+   }
+
+   .list a {
+    font-size: 0.6ch;
+   }
+  }
+
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+   
+   #myInput {
+    width: 300px;
+    border: 0.8px solid rgba(163, 209, 255, 1);
+   }
+
+   .lee iframe {
+    width: 500px;
+    height: 250px;
+    border: 1px solid white;
+   }
+
+   .list {
+    display: block;
+   }
+
+   .list a {
+    font-size: 0.6em;
+   }
+
+   .dep {
+    width: 30%;
+    float: none;
+    display: inline-block;
+    padding: 10px 10px 20px 10px;
+    margin-left: 30vh;
+
+   }
+
+   .section {
+    text-align: center;
+    border-radius: 2px;
+   }
+
+   .section img {
+    width: 100%;
+    height: auto;
+   }
+
+   .section h2 {
+    text-transform: uppercase;
+   }
+
+   .section a {
+    font-size: 1.4ch;
+   }
+  }
+
+  @media screen and (min-width: 850px) {
+   .bar {
+    border-radius: 5px;
+    display: block;
+   border-bottom: 1px solid rgba(211, 211, 211, 1);
+   }
+
+   .ber {
+    display: none;
+   }
+
+   .on {
+    display: flex;
+   }
+
+   .list {
+    display: block;
+   }
+
+  }
+
+  @media screen and (max-width:560px) {
+   .bur {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+   }
+
+   .bar {
+    box-shadow: none;
+    border-radius: 5px;
+    border-bottom: 0.8px solid white;
+    background: rgba(0, 0, 0, 0.62);
+   }
+
+   .bar a {
+    background: none;
+   }
+
+   .ber {
+    display: block;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    border-bottom: 1px solid wheat;
+   }
+
+   .ber h4 {
+    font-size: 1em;
+   background:none;
+   }
+
+   .on {
+    padding: 10px 10px;
+    display: table;
+    display: none;
+    justify-content: center;
+    text-align: left;
+   }
+
+   #myInput {
+    width: 300px;
+    background: rgba(41, 41, 41, 0.8);
+    border: 1px solid rgba(163, 209, 255, 1);
+   }
+
+   .lee iframe {
+    height: 160px;
+    width: 320px;
+    border: 1px solid white;
+   }
+
+   .list {
+    display: none;
+   }
+
+   .list a {
+    font-size: 0.6em;
+   }
+
+   .dep {
+    width: 47%;
+    float: none;
+    display: inline-block;
+    padding: 10px 10px 20px 10px;
+
+   }
+
+   .section {
+    text-align: center;
+    border-radius: 2px;
+   }
+
+   .section img {
+    width: 100%;
+    height: auto;
+   }
+
+   .section h2 {
+    text-transform: uppercase;
+   }
+
+   .section a {
+
+    font-size: 1.4ch;
+   }
+  }
+ </style>
+</head>
+
+<body>
+ <div class="bur">
+  <div class="bar">
+   <div class="ber" id="ber">
+    <h4>Menu</h4>
+   </div>
+   <div class="on" id="on">
+    <ul><a href="index.html">Home</a></ul>
+    <ul><a href="List Anime">List</a></ul>
+    <ul><a href="Contacts">Contacts</a></ul>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search anime version home page ...." title="Type in a name">
+   </div>
+  </div>
+
+
+  <div class="list" id="list">
+   <h1><a href="">ㅤ</a></h1>
+   <h1><a href="/kimi no nawa/kimi no nawa halaman">Kimi No Nawa</a></h1>
+   <h1><a href="/Mashle/Mashle halaman">Mashle</a></h1>
+   <h1><a href="/Tenki No Ko/tnk halaman">Tenki No Ko</a></h1>
+   <h1><a href="/ao no ochestra/ano halaman">Ao No Orchestra</a></h1>
+   <h1><a href="/Oshi No Ko/onk halaman">Oshi No Ko</a></h1>
+   <h1><a href="/Bungo Stray Dogs S5/bsds5 halaman" style="font-size: 1.25rem">Bungo Stray Dogs S5</a></h1>
+   <h1><a href="/Bungo Stray Dogs S3/Bdss3 halaman" style="font-size: 1.25rem">Bungo Stray Dogs S3</a></h1>
+   <h1><a href="/skip to loafer/skp halaman">Skip To Loafer</a></h1>
+   <h1><a href="/Death Mount Death Play/dmdp halaman" style="font-size: 1.2rem">Death Mount Death Play</a></h1>
+   <h1><a href="/Kimetsu No Yaiba S4/knys4 halaman" style="font-size: 1.25rem">Kimetsu No Yaiba S4</a></h1>
+   <h1><a href="/Tengoku Daimakyou/td halaman" style="font-size: 1.25rem">Tengoku Daimakyou</a></h1>
+   <h1><a href="Tensei Kizoku no Isekai Boukenroku Jichou wo Shiranai Kamigami no Shito/tknibjwskns halaman" style="font-size: 1.1rem">Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito</a></h1>
+   <h1><a href="/Kimi No Suizou Wo Tabetai/knswt halaman" style="font-size: 1.23rem">Kimi No Suizou Wo Tabetai</a></h1>
+   <h1><a href="/Yamada-kun to Lv999 no koi wo suru/ytlnkws halaman" style="font-size: 1.1rem">Yamada-kun to Lv999 no koi wo suru</a></h1>
+   <h1><a href="/Nier Automata/na halaman">Nier Automata</a></h1>
+   <h1><a href="/takt op.Destiny/tod halaman">Takt Op:Destiny</a></h1>
+   <h1><a href="/Kizuna No Allele/kna halaman">Kizuna No Allele</a></h1>
+   <h1><a href="/Kawaii Dake Janaii/kdj halaman" style="font-size: 1.15rem">Kawaii dake ja Nai Shikimori-san</a></h1>
+   <h1><a href="/DARLING in the FRANXX/ditf halaman" style="font-size: 1.4rem">DARLING in the FRANXX</a></h1>
+   <h1><a href="/Natsu e no Tunnel, Sayonara no Deguchi/natsuton halaman" style="font-size: 1.2rem">Natsu e no Tunnel, Sayonara no Deguchi</a></h1>
+   <h1><a href="/Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru Level Up wa Jinsei wo Kaeta/Cheat Musou halaman" style="font-size: 1.15rem">Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta</a></h1>
+   <h1><a href="/Kimi wa Houkago Insomnia/kwhi halaman" style="font-size: 1.4rem">Kimi wa Houkago Insomnia</a></h1>
+   <h1><a href="/Black cover sword of the king wizard/bcsotkw halaman" style="font-size: 1.1rem">Black Cover sword of the King Wizard</a></h1>
+  </div>
+ </div>
+ <br>
+ <div class="lee">
+  <iframe src="https://www.youtube.com/embed/videoseries?list=PLRqD1GJCxkcAwpRtlzc3jnyCQrSj4P-ji&autoplay=1&mute=1"></iframe>
+ </div>
+ <br>
+ <div class="wehh">
+  <div class="dep">
+   <div class="Release" id="Tenki No Ko">
+    <div class="section">
+     <img src="/Tenki No Ko/tnk.png" title="Tenki No Ko">
+     <h2><a href="/Tenki No Ko/Tenki No Ko halaman">Tenki No Ko</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Jigokuraku">
+     <img src="/Jigokuraku/Jigokuraku.png" title="Jigokuraku">
+     <h2><a href="/Jigokuraku/Jigokuraku halaman">Jigokuraku</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Kimi No Nawa">
+     <img src="/kimi no nawa/knw.jpg" title="Kimi no nawa">
+     <h2><a href="/kimi no nawa/kimi no nawa halaman">Kimi No Nawa</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Mashle">
+     <img src="/Mashle/Mashle.png" title="mashle">
+     <h2><a href="/Mashle/Mashle halaman">Mashle</a></h2>
+    </div>
+   </div>
+  </div>
+
+  <div class="dep">
+   <div class="Release">
+    <div class="section" id="Oshi No Ko">
+     <img src="/Oshi No Ko/onk.jpg" data-title="Oshi No Ko">
+     <h2><a href="/Oshi No Ko/onk halaman">Oshi No Ko</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Ao No Orchestra">
+     <img src="/ao no ochestra/ano.jpg" data-title="ao no ochestra">
+     <h2><a href="/ao no ochestra/ano halaman">Ao No Orchestra</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Death Mount Death Play">
+     <img src="/Death Mount Death Play/dmdp.png" data-title="Death Mount Death Play ">
+     <h2><a href="/Death Mount Death Play/dmdp halaman">Death Mount Death Play</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Skip to loafer">
+     <img src="/skip to loafer/skp.png" data-title="skip to loafer">
+     <h2><a href="/skip to loafer/skp halaman">Skip To Loafer</a></h2>
+    </div>
+   </div>
+  </div>
+
+  <div class="dep">
+   <div class="Release">
+    <div class="section" id="Tengoku Daimakyou">
+     <img src="/Tengoku Daimakyou/td.png" data-title="Tengoku Daimakyou">
+     <h2><a href="/Tengoku Daimakyou/td halaman">Tengoku Daimakyou</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Bungo Stray Dogs Dead Apple">
+     <img src="/Bungo Stray Dogs Dead Apple/bsdda.jpg" data-title="Bungo Stray Dogs Dead Apple ">
+     <h2><a href="/Bungo Stray Dogs Dead Apple/bsdda halaman">Bungo Stray Dogs Dead Apple </a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Arknight: Remei Zensou">
+     <img src="/Arknights Reimei Zensou/arz.png" data-title="Arknights: Reimei Zensou">
+     <h2><a href="/Arknights Reimei Zensou/arz halaman">Arknights: Reimei Zensou</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Yamada-kun to Lv999 no Koi wo Suru">
+     <img src="/Yamada-kun to Lv999 no koi wo suru/ytlnkws.png" data-title="Yamada-kun to Lv999 no koi wo suru ">
+     <h2><a href="/Yamada-kun to Lv999 no koi wo suru/ytlnkws halaman">Yamada-kun to Lv999 no koi wo suru</a></h2>
+    </div>
+   </div>
+  </div>
+
+  <div class="dep">
+   <div class="Release">
+    <div class="section" id="Sword Art Online Progressive - Aria of a Starless Night BD">
+     <img src="/Sword Art Online Progressive - Aria of a Starless Night BD/saopaoasn.jpg" data-title="Sword Art Online Progressive - Aria of a Starless Night BD">
+     <h2><a href="/Sword Art Online Progressive - Aria of a Starless Night BD/saopaoasn halaman">Sword Art Online Progressive - Aria of a Starless Night BD</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Kimi No Suizou Wo Tabetai">
+     <img src="/Kimi No Suizou Wo Tabetai/knswt.jpg" data-title="Kimi No Suizou Wo Tabetai">
+     <h2><a href="/Kimi No Suizou Wo Tabetai/knswt halaman">Kimi No Suizou Wo Tabetai</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Kimetsu No Yaiba S4">
+     <img src="/Kimetsu No Yaiba S4/knys4.png" data-title="Kimetsu No Yaiba S4">
+     <h2><a href="/Kimetsu No Yaiba S4/knys4 halaman">Kimetsu No Yaiba S4</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito">
+     <img src="/Tensei Kizoku no Isekai Boukenroku Jichou wo Shiranai Kamigami no Shito/tknib.jpg" data-title="Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito">
+     <h2><a href="/Tensei Kizoku no Isekai Boukenroku Jichou wo Shiranai Kamigami no Shito/tknibjwskns halaman">Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito</a></h2>
+    </div>
+   </div>
+  </div>
+
+  <div class="dep">
+   <div class="Release">
+    <div class="section" id="Kubo-san wa Mob wo Yurusanai">
+     <img src="/Kubo-san wa Mob wo Yurusanai/kwmwy.jpg" data-title="Kubo-san wa Mob wo Yurusanai ">
+     <h2><a href="/Kubo-san wa Mob wo Yurusanai/kwmwy halaman">Kubo-san wa Mob wo Yurusanai</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Bungo Stray Dogs S3">
+     <img src="/Bungo Stray Dogs S3/bds3.png" data-title="Bungo Stray Dogs S3">
+     <h2><a href="/Bungo Stray Dogs S3/Bdss3 halaman">Bungo Stray Dogs S3</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Bungo Stray Dogs S5">
+     <img src="/Bungo Stray Dogs S5/bsds5.jpg" data-title="Bungo Stray Dogs S5">
+     <h2><a href="/Bungo Stray Dogs S5/bsds5 halaman">Bungo Stray Dogs S5</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Nier Automata">
+     <img src="/Nier Automata/na.jpg" data-title="Nier Automata">
+     <h2><a href="/Nier Automata/na halaman">Nier Automata</a></h2>
+    </div>
+   </div>
+  </div>
+  <div class="dep">
+   <div class="Release">
+    <div class="section" id="Takt Op:Destiny">
+     <img src="/takt op.Destiny/Tod.jpg" data-title="Takt Op:Destiny">
+     <h2><a href="/takt op.Destiny/tod halaman">Takt Op:Destiny</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Kizuna No Allele">
+     <img src="/Kizuna No Allele/kna.jpg" data-title="Kizuna No Allele ">
+     <h2><a href="/Kizuna No Allele/kna halaman">Kizuna No Allele</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Kawaii dake ja Nai Shikimori-san">
+     <img src="/Kawaii Dake Janaii/kdj.png" data-title="Kawaii dake ja Nai Shikimori-san">
+     <h2><a href="/Kawaii Dake Janaii/kdj halaman">Kawaii dake ja Nai Shikimori-san</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="DARLING in the FRANXX">
+     <img src="/DARLING in the FRANXX/ditf.jpg" data-title="DARLING in the FRANXX">
+     <h2><a href="/DARLING in the FRANXX/ditf halaman">DARLING in the FRANXX</a></h2>
+    </div>
+   </div>
+  </div>
+  <div class="dep">
+   <div class="Release">
+    <div class="section" id="Natsu e no Tunnel, Sayonara no Deguchi">
+     <img src="/Natsu e no Tunnel, Sayonara no Deguchi/natsuton.png" data-title="Natsu e no Tunnel, Sayonara no Deguchi">
+     <h2><a href="/Natsu e no Tunnel, Sayonara no Deguchi/natsuton halaman">Natsu e no Tunnel, Sayonara no Deguchi</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta">
+     <img src="/Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru Level Up wa Jinsei wo Kaeta/Cheat.jpg" data-title="Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta">
+     <h2><a href="/Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru Level Up wa Jinsei wo Kaeta/Cheat Musou halaman">Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Kimi wa Houkago Insomnia">
+     <img src="/Kimi wa Houkago Insomnia/kwhi.jpg" data-title="Kimi wa Houkago Insomnia">
+     <h2><a href="/Kimi wa Houkago Insomnia/kwhi halaman">Kimi wa Houkago Insomnia</a></h2>
+    </div>
+   </div>
+   <div class="Release">
+    <div class="section" id="Black Cover sword of the King Wizard">
+     <img src="/Black cover sword of the king wizard/bcsotkw.jpg" data-title="Black Cover sword of the King Wizard">
+     <h2><a href="/Black cover sword of the king wizard/bcsotkw halaman">Black Cover sword of the King Wizard</a></h2>
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ <script>
+  $(document).ready(function() {
+   $("#ber").click(function() {
+    $("#on").slideToggle("slow");
+   });
+  });
+  $(document).ready(function() {
+   $("#ber").click(function() {
+    $("#list").slideToggle("slow");
+   });
+  });
+
+  function myFunction() {
+   var input, filter, h2, a, i, txtValue;
+   input = document.getElementById("myInput");
+   filter = input.value.toUpperCase();
+   ul = document.getElementById("list");
+   li = ul.getElementsByTagName("h1");
+   for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+     li[i].style.display = "";
+    } else {
+     li[i].style.display = "none";
+    }
+   }
+  }
+ </script>
+</body>
+
+</html>

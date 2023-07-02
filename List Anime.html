@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <link rel="shortcut icon" type="x-icon" href="animezero.png">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="apple-mobile-web-app-capable" content="no">
+ <meta name="mobile-web-app-capable" content="no">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AnimeZero: List Anime">
+<meta name="twitter:description" content="All Anime Titles That Are Already Available To Watch">
+<meta name="twitter:image" content="http://zerogojonime.zya.me/thumnail2.png">
+ <meta property="og:type" content="website">
+<meta property="og:title" content="AnimeZero: List Anime">
+<meta property="og:url" content="http://zerogojonime.zya.me/List%20Anime">
+<meta property="og:description" content="All Anime Titles That Are Already Available To Watch">
+<meta property="og:image" content="http://zerogojonime.zya.me/thumnail2.png">
+<meta property="og:name" content="AnimeZero: List Anime">
+<meta property="og:site:name" content="AnimeZero: List Anime">
+ <style>
+ * {
+ box-sizing: border-box;
+ }
+ html{
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+ }
+
+ body {
+ position: relative;
+ background-color: rgba(4, 4, 5, 0.91);
+ margin: 0;
+ min-height: 200vh;
+ }
+
+ .navbar{
+ background-color: rgba(51, 60, 74, 0.79);
+ box-shadow: 5px 5px 5px black, 15px 15px 15px black, inset 1px 2px 2px white;
+ border-radius: 15px;
+ right: 0;
+ left: 0;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0;
+ padding: 1px 8px;
+ position: relative;
+ overflow: hidden;
+ }
+
+ .navbar h1{
+ padding: 30px;
+ font-family: 'Trebuchet MS';
+ font-style: bold;
+ font-size: x-large;
+ font-weight: 900;
+ text-align: left;
+ text-decoration: none;
+ color: white;
+ text-shadow: 0px 0px 3px darksalmon, 0px 0px 6px darksalmon;
+ padding: 0px 20px;
+
+ }
+
+ .navbar ol{
+ padding: 0 5px;
+ }
+
+ .navbar a{
+ color: floralwhite;
+ font-family: Verdana;
+ font-size: medium;
+ font-style: bold;
+ font-weight: 800;
+ text-decoration: none;
+ text-shadow: 0px 0px 1px darkslateblue, 0px 0px 5px darkslateblue;
+ background: none;
+ border: 1px solid black;
+ box-shadow: 5px 5px 5px black, 15px 15px 15px black, inset 1px 1px 1px white;
+ border-radius: 4px;
+ transition: all 0.3s ease 0s;
+ }
+
+ .navbar ol a{
+ transition: all 0.3s ease 0s;
+ }
+
+ .navbar ol a:hover{
+ color: white;
+ text-shadow: 0px 0px 15px darkblue;
+ background: black;
+ border: 1px solid lightslategrey;
+ letter-spacing: 0.2em;
+ box-shadow: 0px 0px 15px darkblue, inset 3px 3px 8px dimgray;
+ }
+
+ .main{
+ margin: 0;
+ padding: 20px;
+ position: absolute;
+ }
+
+ .main h1{
+ font-family: sans-serif;
+ font-style: Bold;
+ font-size: x-large;
+ color: blanchedalmond;
+ text-decoration: none;
+ text-align: center;
+ text-shadow: 0px 0px 1px darkgoldenrod, 0px 0px 5px darkgoldenrod;
+ background: rgba(23, 23, 23, 0.87);
+ border: 2px solid white;
+ border-radius: 10px;
+ box-shadow: 0px 3px 1px darkslategrey, 0px 0px 5px darkslategrey, 0px 5px 9px darkslategrey;
+ }
+
+ .main p{
+ color: mintcream;
+ font-family: audiowide;
+ font-size: large;
+ font-style: italic;
+ font-weight: 1000px;
+ text-align: center;
+ text-shadow: 1px 2px 1px rgba(130, 43, 13, 0.82);
+ }
+
+ .main h2{
+ color: whitesmoke;
+ font-family: Arial Narrow;
+ font-size: xx-large;
+ font-style: Bold;
+ text-align: left;
+ text-shadow: 0px 2px 0px darkslateblue, 0px 0px 5px darkslateblue;
+ background: rgba(9, 9, 6, 0.35);
+ border: 2px solid black;
+ border-radius: 5px;
+ box-shadow: 1px 2px 1px rgba(137, 73, 49, 0.66), inset 5px 8px 10px rgba(69, 63, 61, 0.66);
+ }
+
+ .list{
+ background: none;
+ padding: 12px 20px 12px 40px;
+ border-radius: 10px;
+ outline: none;
+ box-shadow: 5px 5px 5px rgba(0, 0, 0, 1), 15px 15px 15px rgba(0, 0, 0, 1), 20px 20px 15px rgba(0, 0, 0, 1), inset 1px 2px 2px white;
+ }
+ #myInput {
+ background: none;
+ color: white;
+ width: 100%;
+ font-size: 1em;
+ font-weight: 500;
+ text-align: left;
+ padding: 12px 20px 12px 40px;
+ border-radius: 10px;
+ outline: none;
+ box-shadow: 5px 5px 5px rgba(0, 0, 0, 1), 15px 15px 15px rgba(0, 0, 0, 1), 20px 20px 15px rgba(0, 0, 0, 1), inset 1px 2px 2px white;
+ }
+
+ .main ol{
+ padding: 0px 20px;
+ background: dimgray;
+ border: 2px solid black;
+ border-radius: 5px;
+ box-shadow: 0px 0px 1px linen, 0px 0px 5px linen, inset 5px 1px 5px darkorange;
+ }
+
+ .main a{
+ color: white;
+ text-decoration: none;
+ text-align: left;
+ text-shadow: 0px 0px 1px darksalmon, 0px 0px 3px darksalmon;
+ font-family: georgia;
+ font-style: Bold;
+ font-size: 1.2rem;
+ font-weight: 600;
+ }
+
+ .main ol a{
+ transition: all 0.3s ease 0s;
+ animation-duration: 3s;
+ animation-name: hahahha;
+ }
+
+ .main ol:hover{
+ background: black;
+ border: 2px solid white;
+ border-radius: 5px;
+ box-shadow: 0px 0px 12px darkgoldenrod, inset 3px 4px 9px dimgray;
+ text-shadow: 0px 0px 7px darkblue;
+ letter-spacing: 0.3em;
+ padding: 0px 10px;
+ }
+
+ .main a:hover{
+ opacity: 0;
+ filter: blur(10px);
+ }
+
+ @keyframes hahahha{
+ from{
+ opacity: 0;
+ transform: scale(0);
+ }
+ to{
+ opacity: 1;
+ transform: scale(1);
+ }
+ }
+ @media screen and (min-width: 1200px) {
+ .navbar{
+ height: 100%;
+ width: 100%;
+ padding: 1px 50px;
+ }
+ .main{
+ height: 100%;
+ width: 100%;
+ }
+ .main h1{
+ font-size: 3em;
+ }
+ .main p{
+ font-size: 1.8em;
+ }
+ .main h2{
+ font-size: 3em;
+ }
+ .main a{
+ font-size: 2em;
+ }
+ #myInput{
+ width: 100%;
+ }
+
+ }
+
+ @media screen and (max-width: 900px) and (orientation: landscape) {
+ .navbar{
+ width: 100%;
+ height: 100%;
+ }
+ .main{
+ width: 100%;
+ height: 100%;
+ }
+ }
+
+ @media screen and (max-width:600px) {
+ .navbar{
+ width: 100%;
+ height: 100%;
+ }
+ .main{
+ width: 100%;
+ height: 100%;
+ }
+ }
+ </style>
+</head>
+
+<body>
+
+ <div class="navbar">
+  <h1>AnimeZero</h1>
+  <ol><a href="All Release">Back</a></ol>
+  <ol><a href="index.html">Home</a></ol>
+  <ol><a href="Contacts">Contacts</a></ol>
+ </div>
+
+ <div class="main">
+  <h1>Good luck finding anime that you like </h1>
+  <p>you only need to type the name, then the title will appear alphabetically, so all you have to do is scroll</p>
+  <br>
+  <div class="list" id="list">
+
+   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search anime...." title="Type in a name">
+   <h2>#</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>A</h2>
+   <ol><a href="/Arknights Reimei Zensou/arz halaman">Arknight: Remei Zensou</a></ol>
+   <ol><a href="/ao no ochestra/ano halaman">Ao no Orchestra</a></ol>
+   <h2>B</h2>
+   <ol><a href="/Black cover sword of the king wizard/bcsotkw halaman">Black Cover sword of the King Wizard</a></ol>
+   <ol><a href="#">Bungo Stray Dogs</a></ol>
+   <ol><a href="#">Bungo Stray Dogs S2</a></ol>
+   <ol><a href="/Bungo Stray Dogs S3/Bdss3 halaman">Bungo Stray Dogs S3</a></ol>
+   <ol><a href="/Bungo Stray Dogs Dead Apple/bsdda halaman">Bungo Stray Dogs Dead Apple</a></ol>
+   <ol><a href="#">Boochi The Rock</a></ol>
+   <ol><a href="#">Buddy Dadies</a></ol>
+   <h2>C</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>D</h2>
+   <ol><a href="/Death Mount Death Play/dmdp halaman">Death Mount Death Play</a></ol>
+   <ol><a href="#">Dr. Stone New World S3</a></ol>
+   <ol><a href="#">86</a></ol>
+   <h2>E</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>F</h2>
+   <ol><a href="#">Fate Stay Night Movie: Unlimited Blade Works</a></ol>
+   <ol><a href="#">Fate Grand Order: Shuukyou Tokuiten - Kani jikan Shiden Solomon</a></ol>
+   <ol><a href="#">Fruits Basket prelude</a></ol>
+   <h2>G</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>H</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>I</h2>
+   <ol><a href="#">Isekai one turn kill Neesan: Ane Dohuan no isekai Seikatsu Hajimemashita</a></ol>
+   <ol><a href="/Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru Level Up wa Jinsei wo Kaeta/Cheat Musou halaman">Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta</a></ol>
+   <h2>J</h2>
+   <ol><a href="#">Jujutsu Kaisen Movie 0</a></ol>
+   <ol><a href="/Jigokuraku/Jigokuraku halaman">Jigokuraku</a></ol>
+   <ol><a href="#">Josee to Tora to Sakana-tachi</a></ol>
+   <h2>K</h2>
+   <ol><a href="#">Kage No Jitsuryokusha ni Naritakute</a></ol>
+   <ol><a href="#">Kanojo ga Koushaku-tei ni Itta Riyuu</a></ol>
+   <ol><a href="/Kizuna No Allele/kna halaman">Kizuna No Allele</a></ol>
+   <ol><a href="/Kawaii Dake Janaii/kdj halaman">Kawaii dake Janaii Shikimori-san</a></ol>
+   <ol><a href="#">Kimi Wo Aishita Hitori no Boku e</a></ol>
+   <ol><a href="/kimi no nawa/kimi no nawa halaman">Kimi No Nawa</a></ol>
+   <ol><a href="#">Kimi Wa Houkago Insomnia</a></ol>
+   <ol><a href="/Kimi No Suizou Wo Tabetai/knswt halaman">Kimi No Suizou wo Tabetai</a></ol>
+   <ol><a href="#">Kimetsu No Yaiba S3</a></ol>
+   <ol><a href="/Kimetsu No Yaiba S4/knys4 halaman">Kimetsu No Yaiba S4</a></ol>
+   <ol><a href="#">Kuma Kuma Bear S1</a></ol>
+   <ol><a href="#">Kuma Kuma Bear S2</a></ol>
+   <ol><a href="/Kubo-san wa Mob wo Yurusanai/kwmwy halaman">Kubo-san wa Mob wo Yurusanai</a></ol>
+   <ol><a href="#">Kono Subarashii Sekai no Bakuuen Wo!</a></ol>
+   <h2>L</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>M</h2>
+   <ol><a href="#">Mashle</a></ol>
+   <ol><a href="#">Mahoutsukai no Yome S2</a></ol>
+   <ol><a href="#">Maou Gakuin no Futekigousha</a></ol>
+   <ol><a href="#">Maou Gakuin no Futekigousha S2</a></ol>
+   <ol><a href="#">86</a></ol>
+   <h2>N</h2>
+   <ol><a href="/Natsu e no Tunnel, Sayonara no Deguchi/natsuton halaman">Natsu e no Tunnel, Sayonara no Deguchi</a></ol>
+   <ol><a href="#">Niehime No Kemono no ou</a></ol>
+   <ol><a href="/Nier Automata/na halaman">Nier Automata</a></ol>
+   <h2>O</h2>
+   <ol><a href="#">One Piece Film: Red</a></ol>
+   <ol><a href="/Oshi No Ko/onk halaman">Oshi No Ko</a></ol>
+   <ol><a href="#">Otonari Ni Ginga</a></ol>
+   <h2>P</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>Q</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>R</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>S</h2>
+   <ol><a href="/skip to loafer/skp halaman">Skip To Loafer</a></ol>
+   <ol><a href="#">Suzume No Tojimari</a></ol>
+   <ol><a href="#">Sword Art Online Progressive Movie - Kuuraki yuyami scherzo</a></ol>
+   <ol><a href="#">Spider-Man: No Way Home (2011)</a></ol>
+   <ol><a href="#">Summer Ghost</a></ol>
+   <ol><a href="#">86</a></ol>
+   <h2>T</h2>
+   <ol><a href="/takt op.Destiny/tod halaman">Takt Op:Destiny</a></ol>
+   <ol><a href="/Tenki No Ko/Tenki No Ko halaman">Tenki No Ko</a></ol>
+   <ol><a href="/Tengoku Daimakyou/td halaman">Tengoku Daimakyou</a></ol>
+   <ol><a href="#">Tensei Shitara Datta Ken Movie: Guren no Kizuna-hen</a></ol>
+   <ol><a href="#">Tsuki Ga Kirei</a></ol>
+   <ol><a href="#">Tonari No Totoro</a></ol>
+   <ol><a href="#">Tonikaku Kawaii S2</a></ol>
+   <ol><a href="/Tensei Kizoku no Isekai Boukenroku Jichou wo Shiranai Kamigami no Shito/tknibjwskns halaman">Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito</a></ol>
+   <h2>U</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>V</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>W</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>X</h2>
+   <ol><a href="#">86</a></ol>
+   <h2>Y</h2>
+   <ol><a href="/Yamada-kun to Lv999 no koi wo suru/ytlnkws halaman">Yamada-kun to Lv999</a></ol>
+   <ol><a href="#">Yuusha Party wo Tsuihou sareta Beast Tamer</a></ol>
+   <ol><a href="#">Yahari Ore no Seishun Love Comedy wa Machigatteiru</a></ol>
+   <ol><a href="#">Yuru Camp Movie BD</a></ol>
+   <h2>Z</h2>
+   <ol><a href="#">86</a></ol>
+  </div>
+  </br>
+ </div>
+ <script>
+  function myFunction() {
+   var input, filter, ol, a, i, txtValue;
+   input = document.getElementById("myInput");
+   filter = input.value.toUpperCase();
+   ul = document.getElementById("list");
+   li = ul.getElementsByTagName("ol");
+   for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+     li[i].style.display = "";
+    } else {
+     li[i].style.display = "none";
+    }
+   }
+  }
+ </script>
+
+</body>
+
+</html>

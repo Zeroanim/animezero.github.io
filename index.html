@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <link rel="shortcut icon" type="x-icon" href="/animezero.png">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="apple-mobile-web-app-capable" content="no">
+ <meta name="mobile-web-app-capable" content="no"> <title>New Release</title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AnimeZero">
+<meta name="twitter:description" content="Watch Anime Free All Subtitle">
+<meta name="twitter:image" content="http://zerogojonime.zya.me/thumnail.png">
+ <meta property="og:type" content="website">
+<meta property="og:title" content="AnimeZero">
+<meta property="og:url" content="http://zerogojonime.zya.me/">
+<meta property="og:description" content="Watch Anime Free All Subtitle">
+<meta property="og:image" content="http://zerogojonime.zya.me/thumnail.png">
+<meta property="og:name" content="AnimeZero">
+<meta property="og:site:name" content="AnimeZero">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+ <style>
+  * {
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+  }
+  html{
+   -webkit-tap-highlight-color: transparent;
+   -webkit-user-select: none;
+   user-select: none;
+  }
+
+  body {
+   padding: 0;
+   margin: 0;
+   background: black;
+   position: relative;
+   text-size-adjust: 100%;
+  }
+
+  .new {
+   background: black;
+   position: relative;
+  }
+
+  .new img {
+   width: 100%;
+   height: auto;
+   animation-duration: 3s;
+   animation-name: hep;
+  }
+
+  .new h2 {
+   background: beige;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 2rem;
+   font-weight: 600px;
+   animation-duration: 3s;
+   animation-name: hep;
+  }
+
+  .bar {
+   position: relative;
+   background: hsla(235, 0%, 14%, 1);
+   align-items: center;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 2px;
+   margin: 0;
+   border-bottom: 1px solid white;
+   border-style: dashed;
+
+  }
+
+  .bar h1 {
+   color: rgba(255, 255, 255, 1);
+   font-size: 2em;
+   animation-name: hep;
+   animation-duration: 3s;
+  }
+
+  .huhh {
+   align-items: left;
+   animation-name: hep;
+   animation-duration: 3s;
+
+  }
+
+  .navigasi {
+   display: none;
+  }
+
+  .navigasi ul,a {
+   border-bottom: 0.5px solid white;
+   margin-bottom: 20px;
+   font-size: 1.5vh;
+   text-decoration: none;
+   font-family: 'Courier New';
+   color: white;
+  }
+
+  .ads {
+   background: coral;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: inherit;
+   animation-duration: 3s;
+   animation-name: hep;
+  }
+
+  .ads p {
+   font-weight: 800px;
+   font-size: 0.8rem;
+   animation: 15s slide linear infinite;
+  }
+
+  @keyframes slide {
+   from {
+    transform: translateX(200%);
+   }
+
+   to {
+    transform: translateX(-200%);
+   }
+  }
+
+  .isi {
+   background: rgba(35, 35, 35, 0.7);
+   animation-duration: 3s;
+   animation-name: hep;
+  }
+
+  .trailer {
+   background: black;
+
+
+  }
+
+  .root {}
+
+  .tril {
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   height: 360px;
+   width: 640px;
+   animation-duration: 3s;
+   animation-name: hep;
+  }
+
+  .trailer p {
+   color: white;
+   text-align: center;
+   font-size: 2rem;
+   font-style: bold;
+   font-weight: 800;
+   animation-duration: 3s;
+   animation-name: hep;
+  }
+
+  .banner1 h2 {
+   background: rgba(117, 236, 240, 1);
+   text-transform: uppercase;
+   animation-duration: 3s;
+   animation-name: hep;
+   font-size: 1.5rem;
+  }
+
+  .boot {
+   border: 2px solid white;
+   animation-duration: 3s;
+   animation-name: hep;
+
+  }
+
+  .se {
+   display: flex;
+   max-width: auto;
+   min-width: auto;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   margin-bottom: 20px;
+   text-align: center;
+   text-align-last: center;
+   align-items: initial;
+   background: #000000;
+   box-shadow: 0px 8px 9px hsla(235, 0%, 0%, 1);
+   border: 2px solid white;
+   animation-duration: 3s;
+   animation-name: hep;
+   content: "";
+   clear: both;
+
+  }
+
+  .se img {
+   margin-right: 20px;
+   margin-left: 15px;
+   height: auto;
+   width: 400px;
+   animation-duration: 3s;
+   animation-name: hep;
+
+  }
+
+  .se a {
+   color: #FFF4D3;
+   font-weight: 550;
+   text-decoration: none;
+   border-bottom: none;
+   background: none;
+   font-size: 1.5em;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   animation-duration: 3s;
+   animation-name: hep;
+  }
+
+  .se p {
+   color: hsla(235, 0%, 100%, 1);
+   text-align: center;
+   text-align-last: center;
+   font-family: 'Poppins', sans-serif;
+   background: #0C0706;
+   display: block;
+  }
+
+  .se h3 {
+   color: white;
+   font-size: 2.5em;
+   background: #140020;
+
+  }
+
+  .sinopsis {
+   display: block;
+  }
+
+  .sinopsiss {
+   display: none;
+  }
+  .sinopsiss h3{
+   color: #6AC4FF;
+  }
+
+  .more h2 {
+   background: #5D7BFF;
+   font-size: 3rem;
+  }
+
+  .more a {
+   border-bottom: none;
+   background: none;
+   font-family: 'Franklin Gothic Medium';
+   text-decoration: none;
+   color: #000000;
+   animation-duration: 3s;
+   animation-name: hep;
+  }
+
+  .cr {
+   background: rgba(26, 25, 25, 0.82);
+   padding: 10px 20px;
+   position: relative;
+   text-align: center;
+
+
+  }
+
+  .cr img {
+   height: 15%;
+   width: 15%;
+   clip-path: circle();
+   position: center;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   filter: invert(0.1);
+   border: 1px solid white;
+   animation-duration: 3s;
+   animation-name: hep;
+  }
+
+  .cr a {
+   text-decoration: none;
+   font-family: fantasy;
+   border-bottom: none;
+   color: white;
+   text-shadow: 0px 0px 1.5px white;
+   font-size: 2rem;
+   animation-duration: 3s;
+   animation-name: hep;
+  }
+
+  .cr h3 {
+   font-family: fantasy;
+   font-size: 2rem;
+   font-weight: 500;
+   color: white;
+   text-shadow: 0px 0px 1.5px white;
+   animation-duration: 3s;
+   animation-name: hep;
+  }
+
+  @keyframes hep {
+   from {
+    opacity: 0;
+    transform: scale(0);
+   }
+
+   to {
+    opacity: 1;
+    transform: scale(1);
+   }
+  }
+
+  @media screen and (max-width: 600px) {
+   .bar {
+    padding: 0.3px;
+
+   }
+
+   .bar h1 {
+    font-size: 1.4em;
+   }
+
+   .navigasi {
+    text-align: left;
+    align-items: left;
+   }
+
+   .navigasi a {
+    font-size: 1.5ch;
+   }
+
+   .trailer iframe {
+    height: 160px;
+    width: 320px;
+
+   }
+
+   .trailer p {
+    font-size: 1rem;
+   }
+
+   .boot {
+    border: 1px solid white;
+   }
+
+   .se {
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-align-last: center;
+    border: 1px solid white;
+    margin-bottom: 40px;
+    content: "";
+    clear: both;
+   }
+
+   .se img {
+    height: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    clear: both;
+    content "";
+   }
+
+   .se span {
+    font-size: 1ch;
+   }
+
+   .se a {
+    text-align: center;
+    font-size: 1rem;
+   }
+   .se p{
+    font-size: 1.1em;
+   }
+
+   .sinopsis {
+    display: none;
+   }
+
+   .se h3 {
+    font-size: 1.5em;
+   }
+
+   .sinopsiss {
+    display: block;
+    background: black;
+   }
+
+   .more h2 {
+    font-size: 1.5rem;
+   }
+
+   .cr img {
+    height: 25%;
+    width: 25%;
+   }
+
+   .cr a {
+    font-size: 0.9rem;
+   }
+
+   .cr h3 {
+    font-size: 1rem;
+   }
+
+   .ads p {
+    font-weight: 800px;
+    font-size: 1rem;
+    animation: 15s slide linear infinite;
+   }
+
+   @keyframes slide {
+    from {
+     transform: translateX(400%);
+    }
+
+    to {
+     transform: translateX(-400%);
+    }
+   }
+  }
+
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+   .bar {
+    padding: 0.3px;
+
+   }
+
+   .bar h1 {
+    font-size: 1.4em;
+   }
+
+   .navigasi {
+    text-align: left;
+    align-items: left;
+   }
+
+   .navigasi ul,
+   a {
+    font-size: 2ch;
+   }
+
+   .trailer iframe {
+    height: 160px;
+    width: 320px;
+
+   }
+
+   .trailer p {
+    font-size: 1rem;
+   }
+
+   .boot {
+    border: 1px solid white;
+   }
+
+   .se {
+    display: table;
+    text-align: center;
+    text-align-last: center;
+    border: 1px solid white;
+    margin-bottom: auto;
+    content: "";
+    clear: both;
+   }
+
+   .se img {
+    height: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    clear: both;
+    content "";
+   }
+
+   .se span {
+    font-size: 4ch;
+   }
+
+   .se a {
+    text-align: center;
+    font-size: 1.5rem;
+   }
+   .sinopsis {
+    display: none;
+   }
+
+   .se h3 {
+    font-size: 1.5em;
+   }
+
+   .sinopsiss {
+    display: block;
+   }
+
+   .more h2 {
+    font-size: 1.5rem;
+   }
+
+   .cr img {
+    height: 15%;
+    width: 15%;
+   }
+
+   .cr a {
+    font-size: 0.9rem;
+   }
+
+   .cr h3 {
+    font-size: 1rem;
+   }
+
+   .ads p {
+    font-weight: 800px;
+    font-size: 1rem;
+    animation: 15s slide linear infinite;
+   }
+
+   @keyframes slide {
+    from {
+     transform: translateX(400%);
+    }
+
+    to {
+     transform: translateX(-400%);
+    }
+   }
+
+  }
+
+  @media screen and (max-width: 1200px) {
+   .bar {
+    padding: 2.2px;
+    border-bottom: 2px solid white;
+    border-style: dashed;
+   }
+
+   .navigasi ul,
+   a {
+    font-size: 2.5ch;
+   }
+
+   .se {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    contain: "";
+    clear: both;
+   }
+
+   .se img {}
+
+   .se a {
+    font-size: 1rem;
+   }
+
+   .se span {
+    font-size: 1.5ch;
+   }
+
+  }
+ </style>
+</head>
+
+<body>
+
+ <div class="new">
+  <img src="fe1.jpg" data-title="credit pinterest">
+  <div class="banner">
+   <h2>New Release</h2>
+  </div>
+  <div class="huhh">
+   <div class="bar" id="bar">
+    <h1>Menu</h1>
+   </div>
+   <div class="navigasi" id="navigasi">
+    <ul><a href="/All Release">Search All Release</a></ul>
+    <ul><a href="/List Anime">List All Anime</a></ul>
+    <ul><a href="/Contacts">Contacts</a></ul>
+   </div>
+   <br></br>
+  </div>
+  <div class="ads">
+   <p>please donate so that this website is always updated with the latest updates, sorry if there are ads in some videos, so I suggest using a blocker so that your browser stays safe </p>
+  </div>
+  <br>
+  <div class="isi">
+   <div class="trailer">
+    <iframe class="tril" src="https://www.youtube.com/embed/1eCDPSa6Faw?rel=0"></iframe>
+    <p>Upcoming Anime Bungo Stray Dogs S5</p>
+   </div>
+   <duv class="banner1">
+    <h2>website is still under development</h2>
+   </duv>
+   <div class="boot">
+    <div class="se">
+     <img src="https://u.livechart.me/anime_visuals/local_version/2019/image/01f161e33771a4e7b078666e3f461214.jpg/medium.jpg" data-title="Kimetsu no Yaiba: Katanakaji no Sato-hen">
+     <span><a href="/Kimetsu No Yaiba S4/knys4 halaman">Kimetsu no Yaiba: Katanakaji no Sato-hen Episode 11</a>
+      <div class="sinopsis" id="sinopsis">
+       <p>Tanjiro’s journey leads him to the Swordsmith Village, where he reunites with two Hashira, members of the Demon Slayer Corps’ highest-ranking swordsmen - Mist Hashira Muichiro Tokito and Love Hashira Mitsuri Kanroji. With the shadows of demons lurking near, a new battle begins for Tanjiro and his comrades.</p>
+      </div>
+      <div class="sinopsiss" id="sinopsiss">
+       <h3>Sinopsis</h3>
+     </span>
+    </div>
+   </div>
+   <div class="se">
+    <img src="https://u.livechart.me/anime_visuals/local_version/4705/image/d65a5669ca244b0e065afc33ae2f9ffd.png/large.jpg">
+    <span><a href="/Natsu e no Tunnel, Sayonara no Deguchi/natsuton halaman">Natsu e no Tunnel, Sayonara no Deguchi</a>
+     <div class="sinopsis" id="sinopsis1">
+      <p>One summer morning before school, Kaoru hears an unsettling rumour – of a mysterious tunnel that can grant any wish to those who enter it, but ages them dramatically in exchange. At first, he writes it off as nothing more than an urban legend, but that very night, he happens upon the same passage: the Urashima Tunnel. As he stands before its gaping maw, a thought occurs to him: if this tunnel truly does have the power to grant any wish, could he use it to bring his younger sister back from her untimely death five years prior?
+
+       One summer morning before school, Kaoru hears an unsettling rumour – of a mysterious tunnel that can grant any wish to those who enter it, but ages them dramatically in exchange. At first, he writes it off as nothing more than an urban legend, but that very night, he happens upon the same passage: the Urashima Tunnel. As he stands before its gaping maw, a thought occurs to him: if this tunnel truly does have the power to grant any wish, could he use it to bring his younger sister back from her untimely death five years prior?</p>
+     </div>
+     <div class="sinopsiss" id="sinopsiss1">
+      <h3>Sinopsis</h3>
+    </span>
+   </div>
+  </div>
+  <div class="se">
+   <img src="https://otonari-anime.com/assets/images/story/11_3.jpg">
+   <span><a href="#">Otonari Ni Ginga Episode 11</a>
+    <div class="sinopsis" id="sinopsis2">
+     <p>Ever since their father died, Ichirou Kuga has struggled to support his two younger siblings on nothing but a small inheritance and his passion for drawing manga. But it’s becoming harder to keep up with his growing responsibilities and deadlines, especially after his last two assistants quit to follow their dreams.
+
+      Just as he’s nearing his breaking point, the beautiful and scarily competent Shiori Goshiki applies to become his new assistant. But there’s something almost otherworldly about Goshiki, and soon Kuga finds his reality turned upside down when she suddenly declares them engaged to marry!</p>
+    </div>
+    <div class="sinopsiss" id="sinopsiss2">
+     <h3>Sinopsis</h3>
+   </span>
+  </div>
+ </div>
+ <div class="se">
+  <img src="https://storage.animetosho.org/sframes/00108d72_1032000.png">
+  <span><a href="/Yamada-kun to Lv999 no koi wo suru/ytlnkws halaman">Yamada-kun to Lv999 no koi wo suru Episode 12</a>
+   <div class="sinopsis" id="sinopsis3">
+    <p>Akane Kinoshita, a female college student, faces the absolute worst situation when she ends up breaking up with her boyfriend after he has an affair with a woman he met playing an online game.
+
+     While relieving her stress by rampaging through the open hunting grounds of an online game, Akane spills everything about her heartbreak to “Yamada”, a player she met by chance who happens to be in the same guild.
+     “I don't care,” is his curt reply.
+
+     But when Akane gets a makeover and joins an offline event to get back at her ex-boyfriend, she hears those dreadful words again.
+
+     And that was Akane's fateful encounter with “Yamada”─！</p>
+   </div>
+   <div class="sinopsiss" id="sinopsiss3">
+    <h3>Sinopsis</h3>
+  </span>
+ </div>
+ </div>
+ <div class="se">
+  <img src="https://www.tensei-kizoku.jp/assets/images/story/12/12-004.webp">
+  <span><a href="/Tensei Kizoku no Isekai Boukenroku Jichou wo Shiranai Kamigami no Shito/tknibjwskns halaman">Tensei Kizoku no Isekai Boukenroku Jichou wo Shiranai Kamigami no Shito Episode 12</a>
+   <div class="sinopsis" id="sinopsis4">
+    <p>Shiina Kazuya is killed protecting a young girl at a convenience store where he just happened to be at the wrong time.
+
+     The next thing he knows, he's in the kind of world he has only dreamed about--a world of magic and swords!
+
+     He has been reincarnated as Cain von Silford, the third son of an aristocratic family, and he quickly grows interested in many things he sees.
+
+     Then, on his fifth birthday, he's baptized at a church according to tradition... and the gods grant him several divine blessings, along with stats that could only be described as unusual and extraordinary!
+
+     In his reincarnated life, when it comes to things like battles, romance, and studying, apparently a little overkill is just right?!
+
+     When he puts in the usual effort to do things punctually and properly, it only gets him in trouble... Thus Cain's chaotic life in another world begins!</p>
+   </div>
+   <div class="sinopsiss" id="sinopsiss4">
+    <h3>Sinopsis</h3>
+  </span>
+ </div>
+
+ </div>
+ <div class="se">
+  <img src="https://m.imageimg.net/upload/artist_img/TNGKD-OFCL-0001/6a122ca1e05cd5077b7b5f9455d5dd179783aa46_648de9d747176.jpg">
+  <span><a href="/Tengoku Daimakyou/td halaman">Tengoku Daimakyou Episode 12</a>
+   <div class="sinopsis" id="sinopsis5">
+    <p id="sinopsi">Within the safety of the walls, youths are raised in a nursery-style setting by robots. While life there may appear stale on the surface, the children are full of potential and curiosity. In many ways it is like a slice of heaven. The outside world is a hellscape. It is almost entirely void of anything mechanical and is now inhabited by bizarre, yet powerful supernatural beings.
+
+     Maru, with the aid of Kiruko, is out there crisscrossing what was once Tokyo for heaven. But after searching for so long, maybe heaven is more of an untenable dream than a potential reality.</p>
+   </div>
+   <div class="sinopsiss" id="sinopsiss5">
+    <h3>Sinopsis</h3>
+  </span>
+ </div>
+ </div>
+ <div class="se">
+  <img src="https://www.jigokuraku.com/assets/img/story/jgr_11_05.jpg">
+  <span><a href="/Jigokuraku/Jigokuraku halaman">Jigokuraku Episode 9</a>
+   <div class="sinopsis" id="sinopsis6">
+    <p>The Edo period is nearing its end.
+
+     Gabimaru, a shinobi formerly known as the strongest in Iwagakure who is now a death row convict, is told that he will be acquitted and set free if he can bring back the Elixir of Life from an island that is rumored to be the Buddhist pure land Sukhavati.
+
+     In hopes of reuniting with his beloved wife, Gabimaru heads to the island along with the executioner Yamada Asaemon Sagiri.
+
+     Upon arriving there, they encounter other death row convicts in search of the Elixir of Life... as well as a host of unknown creatures, eerie manmade statues, and the hermits who rule the island.
+
+     Can Gabimaru find the Elixir of Life on this mysterious island and make it back home alive?</p>
+   </div>
+   <div class="sinopsiss" id="sinopsiss6">
+    <h3>Sinopsis</h3>
+  </span>
+ </div>
+ </div>
+ </div>
+ <div class="more">
+  <h2><a href="All Release">Load More</a></h2>
+ </div>
+ </div>
+ <div class="cr">
+  <img src="logo1.png">
+  <br>
+  <a href="Contacts">Contacts</a>
+  <h3>© Credits By AnimeZero </h3>
+ </div>
+ </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+ $(document).ready(function() {
+  $("#bar").click(function() {
+   $("#navigasi").slideToggle("slow");
+  });
+ });
+ $(document).ready(function() {
+  $("#sinopsiss").click(function() {
+   $("#sinopsis").slideToggle("slow");
+  });
+ });
+
+ $(document).ready(function() {
+  $("#sinopsiss1").click(function() {
+   $("#sinopsis1").slideToggle("slow");
+  });
+ });
+
+ $(document).ready(function() {
+  $("#sinopsiss2").click(function() {
+   $("#sinopsis2").slideToggle("slow");
+  });
+ });
+
+ $(document).ready(function() {
+  $("#sinopsiss3").click(function() {
+   $("#sinopsis3").slideToggle("slow");
+  });
+ });
+
+ $(document).ready(function() {
+  $("#sinopsiss4").click(function() {
+   $("#sinopsis4").slideToggle("slow");
+  });
+ });
+
+ $(document).ready(function() {
+  $("#sinopsiss5").click(function() {
+   $("#sinopsis5").slideToggle("slow");
+  });
+ });
+
+ $(document).ready(function() {
+  $("#sinopsiss6").click(function() {
+   $("#sinopsis6").slideToggle("slow");
+  });
+ });
+</script>
+
+</html>
